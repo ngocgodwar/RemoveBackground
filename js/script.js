@@ -234,6 +234,8 @@ $(document).ready(function()
     endModRemoveColor();
 
     updateStackChange();
+
+    updateButtonUndoRedo();
   }
 
   function createModifier(color, threshold)
