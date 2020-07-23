@@ -1,0 +1,32 @@
+
+
+#canvas-src
+{
+  background: transparent;
+}
+
+#canvas-dst
+{
+  background: transparent;
+}
+
+.clear
+{
+  height: 20px;
+}
+
+#table-images
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bt-remove-color
+{
+}
+
+#btn-save
+{
+  font-size: 60px;
+}
+

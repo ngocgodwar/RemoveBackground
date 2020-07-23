@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<htm>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Simple Remove Background Image</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="./files/color-sampler.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/custom.css">
+
+  <script src="./files/jquery.js"></script>
+  <script src="./files/color-sampler.js"></script>
+  <script src="./js/script.js"></script>
+
+</head>
+
+<body class>
+<div>
+
+  <div style="text-align: center;">
+    <h5>Choose an image</h5>
+    <input type="file" id="input-image">
+  </div>
+
+  <div class="clear"></div>
+
+  <div>
+    <table id="table-images" style=" visibility: hidden;">
+      <tr>
+        <td style="min-height: 256px;">
+          <canvas id="canvas-src"></canvas>
+        </td>
+        <td>
+          &nbsp;&nbsp;==&gt;&nbsp;&nbsp;
+        </td>
+        <td style="min-height: 256px;">
+          <canvas id="canvas-dst"></canvas>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="clear"></div>
+
+  <div>
+    <div id="controls" style="text-align: center; visibility: hidden;">
+
+      <div>
+        <div style="display: inline-block;">
+          <button id="btn-remove-undo">Undo</button>
+        </div>
+        <div style="display: inline-block;">
+          <button id="btn-remove-redo">Redo</button>
+        </div>
+      </div>
+
+      <div style="display: inline-block;">
+        <div style="display: inline-block;">
+          <button id="btn-remove-color">Pick & Remove Color</button>
+        </div>
+        <div style="display: inline-block;">
+          <label>With Threshold:</label><input value="10" type="number" id="threshold">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <div>
+    <div id='modifiers'>
+
+    </div>
+  </div>
+
+  <div id="container"></div>
+</div>
+</body>
+
+
+</html>
